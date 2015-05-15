@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600'
+          rel='stylesheet' type='text/css'>
+    <link href="styles/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-1">
+            <img class="logoImg" src="images/brush.png" />
+        </div>
+        <div class="col-md-11 pull-left">
+            <h1>Famous Painters</h1>
+        </div>
+    </div>
+
+
+
+    <div id="content">
+        <div>
+            <label for="painter">Select painter</label>
+            <select id="painter">
+                <option disabled>Choose a painter</option>
+            </select>
+        </div>
+        <div id="painterdetails">
+            <div class="detail-header">Painter details</div>
+            <div class="detail-block" id="paintername"></div>
+
+            <div class="detail-header">Style</div>
+            <div class="detail-block" id="painterstyle"></div>
+
+            <div class="detail-header">Example paintings</div>
+            <div class="detail-block" id="paintings"></div>
+        </div>
+    </div>
+
+    <script data-main="scripts/main" src="scripts/libs/require.js"></script>
+
+</body>
+</html>
